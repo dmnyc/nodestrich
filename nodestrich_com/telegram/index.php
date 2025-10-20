@@ -1,1 +1,0 @@
-<?php header("Location:https://t.me/+9TtLD18cHjYxODYx"); ?>
