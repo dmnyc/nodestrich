@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "src/app/api/community/route.ts": {
+      "maxDuration": 30
+    }
+  },
+  "env": {
+    "AMBOSS_API_KEY": "@amboss_api_key"
+  }
+}

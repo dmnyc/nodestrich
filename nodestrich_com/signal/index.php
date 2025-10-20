@@ -1,0 +1,1 @@
+<?php header("Location:https://signal.group/#CjQKIPDXMEfp5ZBt-s07rtqOV8piR7-rTIGVe7sv3LiGhdUoEhCXFz4IqmGUHRwqgJpq6Fm6"); ?>

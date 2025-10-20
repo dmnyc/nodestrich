@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #818181;
+    background-color: #282828;
+}
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 0.8em;
+}
+h1, h2 {color: #f800c1; margin-bottom: 5px;}
+h4 {color: #CCC; margin-top: 5px; margin-bottom: 5px;}
+a:link {color: #f800c1;}
+a:visited {color: #f800c1;}
+a:hover {color: #800080; background-color: #f800c1;}
+a:active {color: #800080; background-color: #f800c1;}
+
+/*-----remove highlight for image links-----*/
+.center span a:hover {background-color: #121212;}
+.center span a:active {background-color: #121212;}
+
+
+/*===============MAIN LAYOUT=============== */
+.container {
+    max-width: 800px;
+    margin: 42px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 8px solid #121212;
+    border-radius: 20px;
+    background-color: #121212;
+}
+.center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row {margin-bottom: 20px;}
+.linkPic {width: 32px; height: 32px;}
+
+/*==============HEADER LAYOUT============== */
+.title-row {
+  background-image: url('img/nodestrich-logo.jpg');
+  background-size: contain; /* Changed from cover to contain for better scaling */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.title-row h1 {color: #CA98C6; margin-bottom: 20px;}
+.visually-hidden {
+  color: transparent;
+  font-size: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*==========COMMUNITY STAT LAYOUT========== */
+.stats-row {display: flex;}
+.column {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 10px 2px;
+    margin: 0px 20px;
+    border: 8px solid #282828;
+    border-radius: 20px;
+    background-color: #282828;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Make the counter numbers larger and bold */
+#memberCounter, #channelCounter, #capacityCounter {
+  font-size: 2em; /* Make numbers 2x larger */
+  font-weight: bold; /* Make numbers bold */
+  display: block; /* Ensure they're on their own line */
+  margin-top: 5px; /* Add a bit of spacing */
+  color: #fff; /* Make them white for better contrast */
+}
+
+/* Add media queries for responsive design */
+@media screen and (max-width: 600px) {
+  .title-row {
+    height: 150px; /* Reduce height on smaller screens */
+    margin-bottom: 15px;
+  }
+  
+  .container {
+    padding: 10px; /* Reduce container padding on mobile */
+  }
+  
+  .stats-row {
+    flex-direction: column; /* Stack stats vertically on mobile */
+  }
+  
+  .column {
+    margin: 10px 0; /* Adjust column margins for stacked layout */
+  }
+  
+  #memberCounter, #channelCounter, #capacityCounter {
+    font-size: 1.8em; /* Slightly smaller on mobile but still prominent */
+  }
+}
+
+/* For very small screens */
+@media screen and (max-width: 320px) {
+  .title-row {
+    height: 120px;
+  }
+}
