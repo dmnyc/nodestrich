@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server';
 import { getFullCommunityInfo } from '@/lib/amboss';
 
+// Configure route for longer timeout (Amboss API can be slow)
+export const maxDuration = 30;
+
 export async function GET() {
   try {
     const result = await getFullCommunityInfo();
