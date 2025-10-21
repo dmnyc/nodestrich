@@ -14,7 +14,7 @@ export default async function Home() {
         <h2 className="text-2xl font-bold text-[#f800c1] mb-4">Welcome!</h2>
         <p className="text-gray-300 mb-6">
           Nodestrich is a community for node runners using Nostr. Users of all levels are welcome to join,
-          open channels, share knowledge, and build the Nostr circular economy. We are active on both Telegram and Signal.
+          open channels, share knowledge, and build the Nostr circular economy. We are active on Nostr, as well as Telegram and Signal.
         </p>
         <p className="text-gray-300 mb-6">To learn more and join, click one of the icons below:</p>
 
